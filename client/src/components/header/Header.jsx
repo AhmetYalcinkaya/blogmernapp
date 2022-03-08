@@ -5,7 +5,7 @@ export default function Header() {
     <div className="header">
       <div className="headerTitles">
         <span className="headerTitleSm">React Blog APP</span>
-        <span className="headerTitleLg">WELCOME !!</span>
+        <span className="headerTitleLg">WELCOME </span>
       </div>
       <img
         className="headerImg"
