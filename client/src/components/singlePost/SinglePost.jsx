@@ -7,7 +7,6 @@ export default function SinglePost() {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  console.log(path);
 
   useEffect(() => {
     const getPost = async () => {
@@ -37,8 +36,9 @@ export default function SinglePost() {
         <div className="singlePostInfo">
           <span>
             Author:
-            <b className="singlePostAuthor">{post.username}</b>
-          </span>
+            <Link to={`/?user=${post.username}`} className="link">
+              <b> {post.username}</b>
+            </Link>          </span>
           <span>{new Date(post.createdAt).toDateString()}</span>
         </div>
         <p className="singlePostDesc">{post.desc}</p>
