@@ -5,6 +5,7 @@ const userRoute = require("./routes/users");
 const postRoute = require("./routes/posts");
 const categoryRoute = require("./routes/categories");
 const multer = require("multer");
+const path = require("path");
 
 //mongose connection
 dotenv.config({ path: "../config.env" });
@@ -12,6 +13,7 @@ require("./db/conn");
 
 const app = express();
 app.use(express.json());
+app.use("/images", express.static(path.join(__dirname, "/images")));
 
 //multerr
 const storage = multer.diskStorage({
@@ -19,7 +21,7 @@ const storage = multer.diskStorage({
     cb(null, "./images");
   },
   filename: (req, file, cb) => {
-    cb(null, "hello.jpeg");
+    cb(null, req.body.name);
   },
 });
 const upload = multer({ storage: storage });
