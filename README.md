@@ -13,7 +13,6 @@ https://www.youtube.com/watch?v=LelifxOrzvw&list=PLj-4DlPRT48lGpll2kC4wOsLj7SEV_
 
 ### Images of The Trip Map App:
 
-[![image](https://www.linkpicture.com/q/Adsız_45.png)](https://www.linkpicture.com/view.php?img=LPic6228a611215e01117643694)
 [![image](https://www.linkpicture.com/q/Adsız2_2.png)](https://www.linkpicture.com/view.php?img=LPic6228a6758ed6e1130442523)
 
 
